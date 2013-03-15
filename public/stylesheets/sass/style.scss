@@ -47,18 +47,8 @@ $margin: 16px;
 }
 
 .disclaimer{
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
-}
-
-.roca{
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.roca:hover{
-  text-decoration: underline;
+  color: darken($blue, 9%);
 }
 
 /* #Page Styles
