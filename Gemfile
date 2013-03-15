@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 gem 'sinatra', '~>1.4.0'
 gem 'sinatra-flash'
+gem 'sinatra-partial'
 gem 'sass'
 gem 'newrelic_rpm'

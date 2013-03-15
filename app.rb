@@ -1,8 +1,12 @@
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/flash'
+require 'sinatra/partial'
+
+set :partial_template_engine, :erb
 
 enable :sessions
+enable :partial_underscores
 
 configure :production do
   require 'newrelic_rpm'
