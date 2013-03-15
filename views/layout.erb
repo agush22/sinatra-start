@@ -1,42 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
-
-  <!-- Basic Page Needs
-    ================================================== -->
-  <meta charset="utf-8">
-  <title>Temp</title>
-  <meta name="description" content="temp description">
-  <meta name="author" content="temp author">
-  <link rel="shortcut icon" href="/favicon.ico" />
-
-  <!-- Mobile Specific Metas
-    ================================================== -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <!-- CSS
-    ================================================== -->
-  <link rel="stylesheet" href="stylesheets/style.css">
-
-
-  <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-</head>
+<%= partial :"head" %>
 <body>
-  <div class="container main-container clearfix">
-    <div class="sixteen columns alpha omega">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="sample">Sample</a></li>
-      </ul>
-    </div>
-  </div><!-- container -->
+  <%= partial :"header" %>
   <div class="container main-container clearfix">
     <div class="eight columns alpha">
       <%= yield %>
@@ -46,15 +11,6 @@
     </div>
   </div><!-- container -->
   <hr />
-  <div class="container">
-    <div class="fourteen columns alpha">
-      <p class="disclaimer"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
-    </div>
-    <div class="two columns omega">
-      <a href="http://facebook.com/" target="_blank"><img src="/imgs/facebook.png" alt="facebook"/></a>
-      <a href="http://twitter.com/" target="_blank"><img src="/imgs/twitter.png" alt="twitter"/></a>
-    </div>
-    <br class='clear'>
-  </div>
+  <%= partial :"footer" %>
 </body><!-- End Document-->
 </html>
