@@ -1,17 +1,94 @@
+/* Table of Contents
+==================================================
+  #Imports
+  #Variables
+  #Site Styles
+  #Page Styles
+  #Media Queries
+  #Font-Face */
+
+/* #Imports
+================================================== */
+
 @import "skeleton/base";
 @import "skeleton/skeleton";
-@import "skeleton/layout";
+
+/* #Variables
+================================================== */
 
 $blue: #3bbfce;
 $margin: 16px;
 
-.disclaimer{
-  border-color: $blue;
-  color: darken($blue, 9%);
+/* #Site Styles
+================================================== */
+
+.main-container{
+  margin-top: 20px;
 }
 
-.border{
-  padding: $margin / 2;
-  margin: $margin / 2;
-  border-color: $blue;
+.done{
+  text-decoration: line-through;
+}
+
+.root{
+  display: block;
+}
+
+.logo{
+  max-width: 100%;
+}
+
+.support-logo{
+  margin: 20% auto;
+}
+
+.center-align{
+  text-align:center;
+}
+
+.disclaimer{
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.roca{
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.roca:hover{
+  text-decoration: underline;
+}
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../fonts/BebasNeue.otf');
+  font-weight: normal;
+  font-style: normal;
 }
